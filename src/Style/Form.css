@@ -1,0 +1,30 @@
+form{
+    display: flex;
+    flex-direction: column;
+  }
+  form input{
+    margin-top: 20px;
+  }
+  form select{margin-bottom: 20px;}
+  form input{padding: 12px 15px;}
+  h1{
+    margin-bottom: 20px;
+  }
+  button{
+    height: 46px;
+    margin-top: 14px;
+    border-radius: 8px;
+    border:1px solid rgb(8, 68, 6);
+    box-shadow: 1px 2px 3px #252525aa;
+    font-size: 15px;
+    
+  }
+  
+  .error{
+    font-size: 17px;
+    color: rgb(122, 12, 22);
+    margin-top:-10px;
+    margin-bottom: 10px;
+  }
+
+  .inputs-form div {flex-direction: column; display: flex;}
