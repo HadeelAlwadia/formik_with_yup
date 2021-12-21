@@ -1,30 +1,20 @@
-form{
-    display: flex;
-    flex-direction: column;
-  }
-  form input{
-    margin-top: 20px;
-  }
-  form select{margin-bottom: 20px;}
-  form input{padding: 12px 15px;}
-  h1{
-    margin-bottom: 20px;
-  }
-  button{
-    height: 46px;
-    margin-top: 14px;
-    border-radius: 8px;
-    border:1px solid rgb(8, 68, 6);
-    box-shadow: 1px 2px 3px #252525aa;
-    font-size: 15px;
-    
-  }
-  
-  .error{
-    font-size: 17px;
-    color: rgb(122, 12, 22);
-    margin-top:-10px;
-    margin-bottom: 10px;
-  }
 
-  .inputs-form div {flex-direction: column; display: flex;}
+.work-experine-form{display: flex;  flex-direction: column; width: 100%; margin-top: 20px; }
+.work-experine-form select{margin-bottom: 10px;}
+.work-experine-form input{margin-top:10px; padding: 5px 4px; display: block;}
+.add-btn{
+    border: none; color: #FFCE45;
+     background-color: inherit;
+       font-size: 15px;
+     text-transform:
+      uppercase;text-align: left;
+    margin-top: 20px; }
+.error{color: red;  }
+.date-work{width: 100%; display: flex; }
+.date-work *{width: 100%; display:block ;}
+.work-experine-form input{padding: 3px 20px; }
+
+.compenstation-work {display: flex;}
+.compenstation-work *{width: 100%;}
+.work-experine-form label{font-size: 20px;color: #080806; }
+

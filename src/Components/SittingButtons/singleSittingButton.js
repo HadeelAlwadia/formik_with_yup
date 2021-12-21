@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {useSelector ,useDispatch} from 'react-redux';
-import { chekisgonext } from '../../Redux/List/Actions';
+import {  chekToNExtPage } from '../../Redux/List/Actions';
 
 
  function SingleSittingButton({titlebutton}) {
-    const {isnext} = useSelector(state => state.dataReducer)
+    const {isNext} = useSelector(state => state.list)
     const dispatch=useDispatch();
 
- 
-
     return (
-          <button className='btn'  onClick={()=>{dispatch(chekisgonext(titlebutton));  console.log(isnext)}}  >
-              <NavLink    to={isnext?'nextform':''}> 
-                   {titlebutton}
-             </NavLink>
+        <NavLink   to={isNext?'nextform':''}>
+        <button 
+          onClick={()=>{dispatch(chekToNExtPage(titlebutton));
+
+         console.log(isNext,titlebutton)}} 
+           className={`btn btn-${titlebutton} `}>
+            {titlebutton} 
           </button>
+          </NavLink>
     )
 }
-
 
 
 export default SingleSittingButton;

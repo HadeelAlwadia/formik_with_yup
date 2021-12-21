@@ -1,18 +1,19 @@
-import React from 'react'
-import { Route ,Routes } from "react-router-dom";
+
+import { Route, Switch   } from "react-router-dom";
 import './App.css';
-import FirstForm from './Screens/FirstForm';
+import JobForm from "./Screens/JobForm";
 import SecondForm from './Screens/SecondForm';
 
 
 export default function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<FirstForm />} />
-      <Route path="nextform" element={<SecondForm />} />
-      </Routes>
+        <Switch>
+        <Route exact path="/"  component={JobForm} />
+
+        <Route  exact path="/nextform"  component={SecondForm} />
+        </Switch>
+        
     </div>
   )
 }
-

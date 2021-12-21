@@ -1,12 +1,7 @@
+import { combineReducers, createStore } from "redux";
+import { list } from "./List/Reducer"
 
-import {combineReducers, createStore} from "redux";
-import { dataReducer } from "./List/Reduser";
-    
-    const reducers=combineReducers({
-        dataReducer:dataReducer})
-  
-    
-    
-    export const store=createStore(
-        reducers
-        )
+const redcer=combineReducers({list});
+
+
+export const store=createStore(redcer, window.devToolsExtension && window.devToolsExtension());
